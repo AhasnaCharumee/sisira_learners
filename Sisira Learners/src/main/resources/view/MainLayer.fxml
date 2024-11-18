@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="774.0" prefWidth="1209.0" style="-fx-background-color: #FEDA15;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.gdse72.sisiralearners.controller.MainLayerController">
+   <children>
+      <JFXButton fx:id="SigninBtn" layoutX="547.0" layoutY="586.0" onAction="#handleButtonAction" prefHeight="35.0" prefWidth="154.0" style="-fx-background-color: #481D01;" text="Sign in" textFill="#f2e9e9">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </JFXButton>
+      <ImageView fx:id="imageSteering" fitHeight="209.0" fitWidth="209.0" layoutX="197.0" layoutY="271.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../../Downloads/driving-school.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="lblSisira" layoutX="389.0" layoutY="273.0" prefHeight="124.0" prefWidth="447.0" text="SISIRA" textFill="#9a1010">
+         <font>
+            <Font name="System Bold" size="96.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblLearners" layoutX="457.0" layoutY="375.0" prefHeight="116.0" prefWidth="574.0" text="LEARNERS" textFill="#940707">
+         <font>
+            <Font name="System Bold" size="96.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

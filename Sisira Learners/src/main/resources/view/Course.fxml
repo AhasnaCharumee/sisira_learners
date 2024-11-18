@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="778.0" prefWidth="1465.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.gdse72.sisiralearners.controller.CourseController">
+   <children>
+      <AnchorPane layoutX="-5.0" layoutY="-4.0" prefHeight="70.0" prefWidth="1489.0" style="-fx-background-color: #FEDA15;">
+         <children>
+            <Label layoutX="694.0" layoutY="15.0" text="Courses">
+               <font>
+                  <Font name="System Bold" size="28.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <TableView fx:id="tblCor" layoutX="147.0" layoutY="413.0" prefHeight="279.0" prefWidth="1268.0">
+        <columns>
+          <TableColumn fx:id="colId" prefWidth="133.6000213623047" text=" course_id" />
+          <TableColumn fx:id="colName" prefWidth="428.79998779296875" text="Course Name" />
+            <TableColumn fx:id="colDuration" prefWidth="161.60003662109375" text=" duration" />
+            <TableColumn fx:id="colPrice" prefWidth="141.60003662109375" text="price" />
+            <TableColumn fx:id="colStatus" prefWidth="136.0" text=" status" />
+            <TableColumn fx:id="colMax" prefWidth="109.5999755859375" text="Max_students" />
+            <TableColumn fx:id="colDesc" prefWidth="157.60003662109375" text="  description" />
+        </columns>
+      </TableView>
+      <AnchorPane layoutX="182.0" layoutY="96.0" prefHeight="228.0" prefWidth="1136.0" style="-fx-background-color: gray; -fx-background-radius: 20;">
+         <children>
+            <Label fx:id="lblId" layoutX="113.0" layoutY="40.0" prefHeight="22.0" prefWidth="94.0" text=" course_id" textFill="#fffdfd">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblName" layoutX="113.0" layoutY="78.0" prefHeight="22.0" prefWidth="115.0" text="Course Name" textFill="#fffcfc">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblDuration" layoutX="113.0" layoutY="118.0" prefHeight="22.0" prefWidth="88.0" text=" duration" textFill="#fffbfb">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblPrice" layoutX="113.0" layoutY="166.0" prefHeight="22.0" prefWidth="52.0" text="price" textFill="#fffbfb">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblStatus" layoutX="667.0" layoutY="51.0" prefHeight="26.0" prefWidth="52.0" text=" status" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblMax" layoutX="670.0" layoutY="89.0" prefHeight="40.0" prefWidth="98.0" text="Max_students" textFill="#fffdfd">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblDesc" layoutX="663.0" layoutY="137.0" prefHeight="40.0" prefWidth="103.0" text="  description" textFill="#fffcfc">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <JFXTextField fx:id="txtId" layoutX="234.0" layoutY="38.0" prefHeight="26.0" prefWidth="167.0">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font></JFXTextField>
+            <JFXTextField fx:id="txtName" layoutX="234.0" layoutY="76.0" prefHeight="26.0" prefWidth="357.0">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font></JFXTextField>
+            <JFXTextField fx:id="txtDu" layoutX="234.0" layoutY="116.0" prefHeight="26.0" prefWidth="297.0">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font></JFXTextField>
+            <JFXTextField fx:id="txtPrice" layoutX="228.0" layoutY="153.0" prefHeight="26.0" prefWidth="288.0">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font></JFXTextField>
+            <JFXTextField fx:id="txtStatus" layoutX="840.0" layoutY="42.0" prefHeight="26.0" prefWidth="206.0">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font></JFXTextField>
+            <JFXTextField fx:id="txtMax" layoutX="843.0" layoutY="87.0" prefHeight="26.0" prefWidth="199.0">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font></JFXTextField>
+            <JFXTextField fx:id="txtDesc" layoutX="840.0" layoutY="140.0" prefHeight="26.0" prefWidth="206.0">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font></JFXTextField>
+            <Line endX="30.5999755859375" endY="181.19998168945312" layoutX="587.0" layoutY="31.0" startX="30.5999755859375" startY="-7.599998474121094" />
+         </children>
+      </AnchorPane>
+      <JFXButton fx:id="btnUpdate" layoutX="369.0" layoutY="357.0" onAction="#btnUpdateOnAction" prefHeight="31.0" prefWidth="82.0" style="-fx-background-color: #FD7924;" text="Update" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="btnDelete" layoutX="486.0" layoutY="358.0" onAction="#btnDeleteOnAction" prefHeight="30.0" prefWidth="82.0" style="-fx-background-color: #E21B32;" text="Delete" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="btnSave" layoutX="606.0" layoutY="358.0" onAction="#btnSaveOnAction" prefHeight="31.0" prefWidth="88.0" style="-fx-background-color: #0067B3;" text="Save" textFill="#fff8f8">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="btnReset" layoutX="739.0" layoutY="358.0" onAction="#btnResetOnAction" prefHeight="30.0" prefWidth="82.0" style="-fx-background-color: #CB274E;" text="Reset" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="btnBack" layoutX="845.0" layoutY="357.0" onAction="#btnBackOnAction" prefHeight="30.0" prefWidth="146.0" style="-fx-background-color: #980DFF;" text="Back to Dashboard" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </JFXButton>
+      <AnchorPane layoutY="716.0" prefHeight="62.0" prefWidth="1483.0" style="-fx-background-color: #593401;">
+         <children>
+            <JFXButton fx:id="btnReg" buttonType="RAISED" layoutY="3.0" onAction="#btnRegOnAction" prefHeight="48.0" prefWidth="142.0" style="-fx-background-color: transparent;" text="Registration" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="19.0" />
+               </font>
+            </JFXButton>
+            <Line endX="-6.8000030517578125" endY="48.0" layoutX="145.0" layoutY="3.0" startX="-6.8000030517578125" startY="-6.0" stroke="#ec9c33" />
+            <JFXButton fx:id="btnStudent" buttonType="RAISED" layoutX="154.0" layoutY="-4.0" onAction="#btnStudentOnAction" prefHeight="56.0" prefWidth="107.0" text="Student" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="19.0" />
+               </font>
+            </JFXButton>
+            <Line endX="2.60003662109375" endY="37.4000244140625" layoutX="261.0" layoutY="9.0" startX="2.6000213623046875" startY="-6.0" stroke="#ec9c33" />
+            <JFXButton fx:id="btnEnroll1" buttonType="RAISED" layoutX="276.0" layoutY="-2.0" onAction="#btnEnrollOnAction" prefHeight="56.0" prefWidth="74.0" style="-fx-background-color: transparent;" text="Enroll" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </JFXButton>
+            <Line endY="43.0" layoutX="348.0" layoutY="11.0" startY="-7.0" stroke="#ec9c33" />
+            <JFXButton fx:id="btnpay" layoutX="478.0" layoutY="1.0" onAction="#btnPayeOnAction" prefHeight="56.0" prefWidth="110.0" text="Payment" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </JFXButton>
+            <Line endX="21.4000244140625" endY="39.0" layoutX="567.0" layoutY="18.0" startX="21.79998779296875" startY="-14.0" stroke="#ec9c33" />
+            <JFXButton fx:id="btnSche" layoutX="364.0" onAction="#btnScheduleOnAction" prefHeight="56.0" prefWidth="98.0" text="Schedule" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="btnAssign" layoutX="601.0" onAction="#btnAssignOnAction" prefHeight="56.0" prefWidth="230.0" text="Schedule Assignment" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="btnIns" layoutX="849.0" layoutY="4.0" onAction="#btnInsOnAction" prefHeight="45.0" prefWidth="131.0" text="Instructors" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="19.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="btnVehi1" layoutX="987.0" onAction="#btnVehiOnAction" prefHeight="55.0" prefWidth="142.0" text="Vehicle" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="btnExam1" layoutX="1138.0" layoutY="-2.0" onAction="#btnExamOnAction" prefHeight="56.0" prefWidth="142.0" text="Exam" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="btnDash1" layoutX="1295.0" layoutY="-4.0" onAction="#btnDashOnAction" prefHeight="57.0" prefWidth="170.0" text="Dashboard" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="22.0" />
+               </font>
+            </JFXButton>
+            <Line endX="6.800048828125" endY="55.79998779296875" layoutX="1273.0" layoutY="5.0" startX="6.800048828125" startY="-5.0" stroke="#ec9c33" />
+            <Line endX="16.4000244140625" endY="40.199951171875" layoutX="1113.0" layoutY="15.0" startX="15.5999755859375" startY="-15.0" stroke="#ec9c33" />
+            <Line endX="22.0" endY="40.199951171875" layoutX="965.0" layoutY="15.0" startX="21.79998779296875" startY="-13.0" stroke="#ec9c33" />
+            <Line endX="1.20001220703125" endY="40.4000244140625" layoutX="831.0" layoutY="14.0" startX="1.20001220703125" startY="-13.0" stroke="#ec9c33" />
+            <Line endX="60.4000244140625" endY="39.0" layoutX="402.0" layoutY="17.0" startX="61.4000244140625" startY="-16.0" stroke="#ec9c33" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
